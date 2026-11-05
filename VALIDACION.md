@@ -52,3 +52,10 @@ Preparación: scripts de ZIP y pruebas, build estático, configuración y prueba
 Preparado como sitio estático, con recursos relativos y ZIP incluido. El único workflow activo valida; no publica. La plantilla de Pages está en docs, fuera de workflows. Pages permanecerá desactivado hasta autorización expresa. La futura activación en un repositorio privado exige comprobar disponibilidad del plan; no se modificó la visibilidad para publicar.
 
 Las pruebas móviles se realizaron mediante viewports, no teléfonos físicos. Safari y Chrome se probaron realmente para las descargas; no se afirma una matriz de versiones o dispositivos que no se haya probado.
+
+
+## Repositorio entregado
+
+Repositorio privado e independiente: https://github.com/menciajoel/unah-campus-virtual-prototype . Código y documentación subidos a main. Se verificó private=true y has_pages=false. El primer workflow de validación pasó en GitHub: https://github.com/menciajoel/unah-campus-virtual-prototype/actions/runs/41944478171 . No se creó ningún workflow activo de publicación ni se activó Pages.
+
+El control de archivos versionados no detectó credenciales, correo privado ni rutas del equipo. No se modificaron repositorios existentes. La publicación queda pendiente exclusivamente de una autorización posterior y de comprobar la disponibilidad del plan para Pages privado.
