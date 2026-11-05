@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#10345E" />
+    <meta name="description" content="Prototipo local del Campus Virtual UNAH con Administración, Contabilidad I y Estadística Aplicada. Contenido de demostración." />
+    <title>Administración · Campus Virtual UNAH</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="cabecera">
+      <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-controls="mobile-menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      <a class="brand" href="#/inicio" aria-label="UNAH · Inicio"><img src="./assets/Logotipo-blanco.svg" alt="Universidad Nacional Autónoma de Honduras" width="180" height="64" /></a>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="site-title">Campus Virtual</span>
+      <nav class="desktop-nav" aria-label="Navegación principal" data-global-nav></nav>
+      <button class="icon-button mobile-notification notification-mark" disabled aria-label="Notificaciones, no disponible en este prototipo"><i class="fa-regular fa-bell" aria-hidden="true"></i></button>
+      <button class="profile-button" disabled aria-label="Mi perfil, no disponible en este prototipo"><span class="avatar" aria-hidden="true">JM</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+    </header>
+    <div class="campus-shell" id="campus-shell">
+      <aside class="academic-sidebar" aria-label="Navegación académica">
+        <a class="back-link" href="#/cursos"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Mis cursos</a>
+        <div data-course-summary="desktop"></div>
+        <nav class="unit-navigation" data-unit-navigation="desktop" aria-label="Unidades y clases" tabindex="0"></nav>
+      </aside>
+      <main id="contenido" tabindex="-1"></main>
+    </div>
+    <dialog class="navigation-drawer" id="mobile-menu" aria-label="Menú de navegación">
+      <div class="drawer-header"><button class="icon-button" id="menu-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><a class="brand" href="#/inicio" aria-label="UNAH · Inicio"><img src="./assets/Logotipo-blanco.svg" alt="Universidad Nacional Autónoma de Honduras" width="150" height="64" /></a><span class="brand-divider" aria-hidden="true"></span></div>
+      <div class="drawer-content">
+        <nav class="drawer-nav" data-global-nav aria-label="Navegación principal móvil"></nav>
+        <button class="drawer-profile" disabled><i class="fa-regular fa-circle-user" aria-hidden="true"></i><span>Mi perfil</span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+        <h2 class="drawer-section-title">Mis cursos</h2>
+        <div id="drawer-courses"></div>
+      </div>
+    </dialog>
+    <dialog class="activity-dialog" id="activity-dialog" aria-labelledby="activity-dialog-title">
+      <form method="dialog"><button class="icon-button dialog-close" aria-label="Cerrar actividad"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></form>
+      <span class="demo-label">Demostración local</span>
+      <h2 id="activity-dialog-title">Actividad</h2><div id="activity-dialog-content"></div>
+      <form method="dialog"><button class="primary-button">Volver a la clase</button></form>
+    </dialog>
+    <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript><p>Activa JavaScript para navegar por este prototipo local.</p></noscript>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

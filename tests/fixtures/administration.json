@@ -1,0 +1,199 @@
+{
+  "title": "Administración",
+  "progress": 65,
+  "initialLesson": "u2-c3",
+  "units": [
+    {
+      "id": "u1",
+      "number": 1,
+      "title": "Fundamentos de Administración",
+      "status": "complete",
+      "lessons": [
+        {
+          "id": "u1-c1",
+          "number": 1,
+          "title": "Introducción a la administración",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Introducción a la administración · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u1-c2",
+          "number": 2,
+          "title": "Evolución del pensamiento administrativo",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Evolución del pensamiento administrativo · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u1-c3",
+          "number": 3,
+          "title": "Principios de la administración",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Principios de la administración · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u1-c4",
+          "number": 4,
+          "title": "La administración en las organizaciones",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "La administración en las organizaciones · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "number": 2,
+      "title": "Proceso Administrativo",
+      "status": "current",
+      "lessons": [
+        {
+          "id": "u2-c1",
+          "number": 1,
+          "title": "Introducción",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar introducción y la navegación académica.",
+          "videoTitle": "Introducción · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u2-c2",
+          "number": 2,
+          "title": "Planificación",
+          "status": "complete",
+          "description": "Contenido de demostración para explorar planificación y la navegación académica.",
+          "videoTitle": "Planificación · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u2-c3",
+          "number": 3,
+          "title": "Organización",
+          "status": "current",
+          "description": "Analiza la función de organización en el proceso administrativo y sus principales elementos.",
+          "videoTitle": "La organización en la práctica",
+          "videoDescription": "Explicación de la función de organización y ejemplos aplicados en instituciones reales.",
+          "activity": "Análisis de una estructura organizacional."
+        },
+        {
+          "id": "u2-c4",
+          "number": 4,
+          "title": "Dirección",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar dirección y la navegación académica.",
+          "videoTitle": "Dirección · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "number": 3,
+      "title": "Control y Evaluación",
+      "status": "pending",
+      "lessons": [
+        {
+          "id": "u3-c1",
+          "number": 1,
+          "title": "Fundamentos del control administrativo",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Fundamentos del control administrativo · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u3-c2",
+          "number": 2,
+          "title": "Indicadores de desempeño organizacional",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Indicadores de desempeño organizacional · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u3-c3",
+          "number": 3,
+          "title": "Evaluación de resultados y mejora continua",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Evaluación de resultados y mejora continua · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u3-c4",
+          "number": 4,
+          "title": "Retroalimentación y acciones correctivas",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Retroalimentación y acciones correctivas · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "number": 4,
+      "title": "Gestión de las organizaciones",
+      "status": "pending",
+      "lessons": [
+        {
+          "id": "u4-c1",
+          "number": 1,
+          "title": "Toma de decisiones administrativas",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Toma de decisiones administrativas · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u4-c2",
+          "number": 2,
+          "title": "Comunicación y trabajo en equipo",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Comunicación y trabajo en equipo · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u4-c3",
+          "number": 3,
+          "title": "Liderazgo y gestión del cambio",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Liderazgo y gestión del cambio · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        },
+        {
+          "id": "u4-c4",
+          "number": 4,
+          "title": "Responsabilidad social y ética administrativa",
+          "status": "pending",
+          "description": "Contenido de demostración para explorar esta clase y la navegación académica.",
+          "videoTitle": "Responsabilidad social y ética administrativa · video de demostración",
+          "videoDescription": "Recurso local de muestra. No sustituye el contenido académico de la asignatura.",
+          "activity": "Actividad de demostración de la clase."
+        }
+      ]
+    }
+  ]
+}

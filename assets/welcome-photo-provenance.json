@@ -1,0 +1,35 @@
+{
+  "sourcePage": "https://commons.wikimedia.org/wiki/File:UNAHEntrance_03.JPG",
+  "author": "Thelmadatter",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "original": "assets/originals/UNAHEntrance_03.JPG",
+  "originalSha256": "d7e99909bf9900fda007207b03b45fb4359a1fbc8e01fcabcfdbb9075e0187db",
+  "derivatives": [
+    {
+      "file": "welcome-campus.webp",
+      "width": 2560,
+      "height": 674,
+      "bytes": 504758,
+      "crop": [
+        0,
+        200,
+        3872,
+        1220
+      ]
+    },
+    {
+      "file": "welcome-campus-mobile.webp",
+      "width": 1200,
+      "height": 961,
+      "bytes": 293060,
+      "crop": [
+        1750,
+        150,
+        3872,
+        1850
+      ]
+    }
+  ],
+  "generated": false
+}

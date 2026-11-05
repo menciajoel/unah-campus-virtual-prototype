@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.local-archive/
+validation/
+AGENTS.md
+.openai/
+worker/
+scripts/prepare-sites-build.mjs
+tests/sites-worker.test.mjs
+REFERENCIAS-Y-DECISIONES.md

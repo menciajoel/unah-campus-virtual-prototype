@@ -1,0 +1,28 @@
+{
+  "name": "unah-campus-virtual-prototype",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tokens": "node scripts/generate-tokens.mjs",
+    "check:design": "node scripts/generate-tokens.mjs --check",
+    "test:academic": "node --test tests/course-model.test.mjs",
+    "handoff:build": "python3 scripts/build-handoff.py",
+    "handoff:check": "python3 scripts/build-handoff.py --check",
+    "test:build": "node --test tests/static-build.test.mjs",
+    "build:pages": "npm run check:design && npm run handoff:check && npm run test:academic && npm run build && npm run test:build",
+    "preview:pages": "vite preview --host 127.0.0.1 --port 4174 --strictPort --base /unah-campus-virtual-prototype/"
+  },
+  "dependencies": {
+    "vite": "6.4.2",
+    "@fontsource/inter": "5.2.8",
+    "@fortawesome/fontawesome-free": "6.7.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "version": "1.4",
+    "status": "Handoff vigente: refinamientos aprobados y utilidad de descarga de especificaciones",
+    "reference": "01-REFERENCIAS/campus-virtual-desktop.jpg",
+    "viewport": {
+      "width": 1536,
+      "height": 1024
+    },
+    "overviewReference": "01-REFERENCIAS/clases.png",
+    "overviewViewport": {
+      "width": 1555,
+      "height": 1012
+    }
+  },
+  "color": {
+    "navy": {
+      "value": "#10345E",
+      "type": "color"
+    },
+    "navyDeep": {
+      "value": "#0C2B50",
+      "type": "color"
+    },
+    "action": {
+      "value": "#145391",
+      "type": "color"
+    },
+    "text": {
+      "value": "#101B3C",
+      "type": "color"
+    },
+    "muted": {
+      "value": "#51627D",
+      "type": "color"
+    },
+    "surface": {
+      "value": "#FFFFFF",
+      "type": "color"
+    },
+    "sidebar": {
+      "value": "#F8FAFE",
+      "type": "color"
+    },
+    "selected": {
+      "value": "#E2ECFC",
+      "type": "color"
+    },
+    "activity": {
+      "value": "#EEF4FD",
+      "type": "color"
+    },
+    "line": {
+      "value": "#E0E7F0",
+      "type": "color"
+    },
+    "complete": {
+      "value": "#36AD27",
+      "type": "color"
+    },
+    "pending": {
+      "value": "#A6B4C8",
+      "type": "color"
+    },
+    "yellow": {
+      "value": "#F4DE2B",
+      "type": "color"
+    },
+    "completeReadable": {
+      "value": "#329C24",
+      "type": "color"
+    },
+    "stateBorder": {
+      "value": "#7C8DA8",
+      "type": "color"
+    },
+    "alert": {
+      "value": "#EF3340",
+      "type": "color"
+    },
+    "backdrop": {
+      "value": "rgb(12 27 50 / 48%)",
+      "type": "color"
+    },
+    "navSelected": {
+      "value": "rgb(226 236 252 / 17%)",
+      "type": "color"
+    },
+    "navHover": {
+      "value": "rgb(226 236 252 / 13%)",
+      "type": "color"
+    },
+    "navDivider": {
+      "value": "rgb(255 255 255 / 20%)",
+      "type": "color"
+    },
+    "dateTodaySurface": {
+      "value": "#FFF3C4",
+      "type": "color"
+    },
+    "dateTodayText": {
+      "value": "#8A5800",
+      "type": "color"
+    },
+    "videoControl": {
+      "value": "rgb(12 43 80 / 88%)",
+      "type": "color"
+    },
+    "videoControlBorder": {
+      "value": "rgb(255 255 255 / 85%)",
+      "type": "color"
+    }
+  },
+  "typography": {
+    "family": {
+      "value": "Inter, Arial, sans-serif",
+      "type": "fontFamily"
+    },
+    "size": {
+      "body": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "secondary": {
+        "value": "13px",
+        "type": "dimension"
+      },
+      "nav": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "course": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "lesson": {
+        "value": "30px",
+        "type": "dimension"
+      },
+      "banner": {
+        "value": "28px",
+        "type": "dimension"
+      },
+      "resource": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "section": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "button": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "lessonMobile": {
+        "value": "25px",
+        "type": "dimension"
+      },
+      "courseMobile": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "site": {
+        "value": "22px",
+        "type": "dimension"
+      },
+      "lessonNav": {
+        "value": "13px",
+        "type": "dimension"
+      },
+      "videoTitle": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "welcomeName": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "welcomeNameMobile": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "welcomeGreeting": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "welcomeBody": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "overviewHeading": {
+        "value": "24px",
+        "type": "dimension"
+      }
+    },
+    "weight": {
+      "regular": {
+        "value": 400,
+        "type": "fontWeight"
+      },
+      "medium": {
+        "value": 500,
+        "type": "fontWeight"
+      },
+      "semibold": {
+        "value": 600,
+        "type": "fontWeight"
+      }
+    },
+    "lineHeight": {
+      "body": {
+        "value": 1.5,
+        "type": "number"
+      },
+      "heading": {
+        "value": 1.2,
+        "type": "number"
+      },
+      "compact": {
+        "value": 1.35,
+        "type": "number"
+      }
+    }
+  },
+  "spacing": {
+    "1": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "2": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "3": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "4": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "5": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "6": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "8": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "10": {
+      "value": "40px",
+      "type": "dimension"
+    }
+  },
+  "radius": {
+    "small": {
+      "value": "6px",
+      "type": "dimension"
+    },
+    "medium": {
+      "value": "10px",
+      "type": "dimension"
+    },
+    "large": {
+      "value": "16px",
+      "type": "dimension"
+    }
+  },
+  "layout": {
+    "headerHeight": {
+      "value": "68px",
+      "type": "dimension"
+    },
+    "sidebarWidth": {
+      "value": "380px",
+      "type": "dimension"
+    },
+    "mainGutter": {
+      "value": "40px",
+      "type": "dimension"
+    },
+    "videoRatio": {
+      "value": "16 / 9",
+      "type": "string"
+    },
+    "headerHeightTablet": {
+      "value": "64px",
+      "type": "dimension"
+    },
+    "headerHeightMobile": {
+      "value": "64px",
+      "type": "dimension"
+    },
+    "sidebarWidthCompact": {
+      "value": "320px",
+      "type": "dimension"
+    },
+    "bannerHeight": {
+      "value": "150px",
+      "type": "dimension"
+    },
+    "videoMaxWidth": {
+      "value": "493px",
+      "type": "dimension"
+    },
+    "touchTarget": {
+      "value": "44px",
+      "type": "dimension"
+    },
+    "drawerMaxWidth": {
+      "value": "370px",
+      "type": "dimension"
+    },
+    "drawerWidth": {
+      "value": "66vw",
+      "type": "dimension"
+    },
+    "drawerWidthSmall": {
+      "value": "82vw",
+      "type": "dimension"
+    },
+    "drawerHeaderHeightMobile": {
+      "value": "70px",
+      "type": "dimension"
+    },
+    "bannerMobileRatio": {
+      "value": "807 / 163",
+      "type": "string"
+    },
+    "controlHeight": {
+      "value": "36px",
+      "type": "dimension"
+    },
+    "navControlHeight": {
+      "value": "40px",
+      "type": "dimension"
+    },
+    "bannerDemoMobileMinHeight": {
+      "value": "74px",
+      "type": "dimension"
+    },
+    "handoffClearance": {
+      "value": "100px",
+      "type": "dimension"
+    },
+    "handoffClearanceMobile": {
+      "value": "112px",
+      "type": "dimension"
+    }
+  },
+  "component": {
+    "nav": {
+      "icon": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "avatar": {
+        "value": "40px",
+        "type": "dimension"
+      },
+      "avatarMobile": {
+        "value": "28px",
+        "type": "dimension"
+      },
+      "avatarTablet": {
+        "value": "34px",
+        "type": "dimension"
+      },
+      "brand": {
+        "value": "202px",
+        "type": "dimension"
+      },
+      "brandCompact": {
+        "value": "160px",
+        "type": "dimension"
+      },
+      "brandTablet": {
+        "value": "142px",
+        "type": "dimension"
+      },
+      "brandMobile": {
+        "value": "120px",
+        "type": "dimension"
+      },
+      "brandSmall": {
+        "value": "95px",
+        "type": "dimension"
+      },
+      "brandImageHeight": {
+        "value": "56px",
+        "type": "dimension"
+      },
+      "iconMobile": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "dividerHeight": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "dividerMobileHeight": {
+        "value": "30px",
+        "type": "dimension"
+      },
+      "brandTabletImageHeight": {
+        "value": "52px",
+        "type": "dimension"
+      },
+      "brandDrawerImageHeight": {
+        "value": "58px",
+        "type": "dimension"
+      },
+      "brandMobileImageHeight": {
+        "value": "48px",
+        "type": "dimension"
+      }
+    },
+    "course": {
+      "thumbnail": {
+        "value": "80px",
+        "type": "dimension"
+      },
+      "thumbnailMobileWidth": {
+        "value": "66px",
+        "type": "dimension"
+      },
+      "thumbnailMobileHeight": {
+        "value": "54px",
+        "type": "dimension"
+      },
+      "thumbnailTabletWidth": {
+        "value": "80px",
+        "type": "dimension"
+      },
+      "thumbnailTabletHeight": {
+        "value": "74px",
+        "type": "dimension"
+      },
+      "thumbnailDrawer": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "progressHeight": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "progressMobileHeight": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "progressDrawerHeight": {
+        "value": "6px",
+        "type": "dimension"
+      }
+    },
+    "unit": {
+      "row": {
+        "value": "36px",
+        "type": "dimension"
+      },
+      "lessonRow": {
+        "value": "36px",
+        "type": "dimension"
+      },
+      "rowMobile": {
+        "value": "44px",
+        "type": "dimension"
+      },
+      "status": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "chevron": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "currentRing": {
+        "value": "5px",
+        "type": "dimension"
+      },
+      "line": {
+        "value": "1.5px",
+        "type": "dimension"
+      },
+      "statusMobile": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "check": {
+        "value": "10px",
+        "type": "dimension"
+      },
+      "checkMobile": {
+        "value": "12px",
+        "type": "dimension"
+      }
+    },
+    "resource": {
+      "row": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "rowMobile": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "icon": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "videoMobileWidth": {
+        "value": "100%",
+        "type": "dimension"
+      }
+    },
+    "activity": {
+      "height": {
+        "value": "72px",
+        "type": "dimension"
+      },
+      "icon": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "dateIcon": {
+        "value": "18px",
+        "type": "dimension"
+      }
+    },
+    "welcome": {
+      "height": {
+        "value": "264px",
+        "type": "dimension"
+      },
+      "heightMobile": {
+        "value": "216px",
+        "type": "dimension"
+      },
+      "photoWidth": {
+        "value": "66%",
+        "type": "dimension"
+      },
+      "textWidth": {
+        "value": "530px",
+        "type": "dimension"
+      },
+      "descriptionWidth": {
+        "value": "480px",
+        "type": "dimension"
+      },
+      "photoMobilePosition": {
+        "value": "78% center",
+        "type": "string"
+      },
+      "accentWidth": {
+        "value": "240px",
+        "type": "dimension"
+      },
+      "accentHeight": {
+        "value": "180px",
+        "type": "dimension"
+      },
+      "accentBottom": {
+        "value": "-112px",
+        "type": "dimension"
+      },
+      "accentLeft": {
+        "value": "37%",
+        "type": "dimension"
+      },
+      "desktopFade": {
+        "value": "linear-gradient(90deg, transparent 0%, rgb(0 0 0 / 8%) 10%, rgb(0 0 0 / 35%) 24%, rgb(0 0 0 / 75%) 40%, #000 58%)",
+        "type": "string"
+      }
+    },
+    "overview": {
+      "gutter": {
+        "value": "56px",
+        "type": "dimension"
+      },
+      "mobileGutter": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "headingIcon": {
+        "value": "28px",
+        "type": "dimension"
+      },
+      "selectorWidth": {
+        "value": "52px",
+        "type": "dimension"
+      }
+    },
+    "courseCard": {
+      "imageWidth": {
+        "value": "212px",
+        "type": "dimension"
+      },
+      "imageHeight": {
+        "value": "104px",
+        "type": "dimension"
+      },
+      "mobileImageWidth": {
+        "value": "96px",
+        "type": "dimension"
+      },
+      "mobileImageHeight": {
+        "value": "72px",
+        "type": "dimension"
+      },
+      "listImageWidth": {
+        "value": "96px",
+        "type": "dimension"
+      },
+      "listImageHeight": {
+        "value": "64px",
+        "type": "dimension"
+      },
+      "progressMaxWidth": {
+        "value": "436px",
+        "type": "dimension"
+      },
+      "actionSize": {
+        "value": "40px",
+        "type": "dimension"
+      }
+    },
+    "upcoming": {
+      "rowHeight": {
+        "value": "72px",
+        "type": "dimension"
+      },
+      "icon": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "headerHeight": {
+        "value": "64px",
+        "type": "dimension"
+      },
+      "footerHeight": {
+        "value": "56px",
+        "type": "dimension"
+      }
+    },
+    "video": {
+      "playSize": {
+        "value": "56px",
+        "type": "dimension"
+      },
+      "playSizeMobile": {
+        "value": "44px",
+        "type": "dimension"
+      },
+      "playIcon": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "playIconMobile": {
+        "value": "16px",
+        "type": "dimension"
+      }
+    },
+    "handoff": {
+      "icon": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "shadow": {
+        "value": "0 2px 8px rgb(12 43 80 / 10%)",
+        "type": "string"
+      }
+    }
+  },
+  "motion": {
+    "accordionDuration": {
+      "value": "260ms",
+      "type": "duration"
+    },
+    "accordionEasing": {
+      "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "type": "cubicBezier"
+    }
+  }
+}

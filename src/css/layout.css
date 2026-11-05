@@ -1,0 +1,79 @@
+/* The viewport grid keeps one navbar visible on every device. */
+body { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100dvh; overflow: hidden; }
+.site-header { width: 100%; height: calc(var(--campus-navbar-height) + var(--safe-area-top)); display: flex; align-items: center; gap: var(--spacing-6); padding: var(--safe-area-top) var(--spacing-10) 0; background: var(--color-navy); color: var(--color-on-primary); }
+.brand { display: flex; flex: none; align-items: center; width: var(--header-logo-width); }
+.brand img { width: 100%; height: var(--component-nav-brand-image-height); object-fit: contain; }
+.brand-divider { width: 3px; height: var(--component-nav-divider-height); background: var(--color-yellow); flex: none; }
+.site-title { font-size: var(--typography-size-site); font-weight: var(--typography-weight-medium); white-space: nowrap; margin-right: auto; letter-spacing: -.3px; }
+.desktop-nav { display: flex; align-items: center; gap: var(--spacing-2); }
+.desktop-nav > * { position: relative; display: flex; align-items: center; justify-content: center; gap: var(--spacing-3); padding: 0 var(--spacing-4); min-height: var(--layout-nav-control-height); border-radius: var(--radius-medium); background: transparent; color: inherit; white-space: nowrap; font-size: var(--typography-size-nav); font-weight: var(--typography-weight-medium); }
+.desktop-nav i { font-size: var(--component-nav-icon); }
+.desktop-nav [aria-current] { background: var(--color-nav-selected); }
+.desktop-nav a:hover { background: var(--color-nav-hover); }
+.profile-button { display: flex; align-items: center; gap: var(--spacing-3); padding: 0 0 0 var(--spacing-6); min-height: var(--touch-target); background: transparent; color: inherit; border-left: 1px solid var(--color-nav-divider); }
+.avatar { display: grid; place-items: center; width: var(--component-nav-avatar); height: var(--component-nav-avatar); background: var(--color-surface); color: var(--color-text); font-size: var(--typography-size-nav); font-weight: var(--typography-weight-semibold); border-radius: 50%; }
+.campus-shell { display: grid; grid-template-columns: var(--layout-sidebar-width) minmax(0, 1fr); height: 100%; min-height: 0; overflow: hidden; }
+.academic-sidebar { padding: var(--spacing-4) var(--spacing-4) var(--spacing-6); background: var(--color-sidebar); border-right: 1px solid var(--color-line); }
+.back-link { display: inline-flex; align-items: center; gap: var(--spacing-4); min-height: var(--touch-target); font-size: var(--typography-size-nav); font-weight: var(--typography-weight-medium); }
+.academic-sidebar > .back-link { margin: var(--spacing-1) var(--spacing-3) var(--spacing-6); }
+.academic-sidebar > [data-course-summary] { margin: 0 var(--spacing-2) var(--spacing-8); }
+main { min-width: 0; min-height: 0; height: 100%; overflow-y: auto; overscroll-behavior-y: contain; padding: var(--spacing-6) calc(var(--layout-main-gutter) / 2) var(--spacing-8); }
+.unit-banner { height: var(--layout-banner-height); overflow: hidden; border-radius: var(--radius-large); margin-bottom: var(--spacing-5); }
+.unit-banner-original { background: url('/assets/banner.jpg') left center / cover no-repeat; }
+.unit-banner-demo { display: flex; align-items: center; background: var(--color-navy); color: var(--color-on-primary); padding: var(--spacing-8) var(--spacing-10); }
+.unit-banner-demo h2 { font-size: var(--typography-size-banner); }
+.unit-banner-demo p { font-size: var(--typography-size-secondary); }
+.lesson-content { padding: 0 calc(var(--layout-main-gutter) / 2); }
+.lesson-heading { padding: 0 var(--spacing-4) var(--spacing-5); }
+.lesson-heading h1 { font-size: var(--typography-size-lesson); line-height: var(--typography-line-height-heading); letter-spacing: -.6px; margin: var(--spacing-1) 0 var(--spacing-2); font-weight: var(--typography-weight-semibold); }
+.lesson-description { color: var(--color-muted); line-height: var(--typography-line-height-body); }
+.mobile-academic-summary, .menu-toggle, .mobile-notification { display: none; }
+.show-overview { grid-template-columns: 1fr; }
+.show-overview > .academic-sidebar { display: none; }
+@media (min-width: 1200px) {
+  .academic-sidebar { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
+  .academic-sidebar > .back-link, .academic-sidebar > [data-course-summary] { flex-shrink: 0; }
+  .academic-sidebar > .unit-navigation { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; }
+}
+
+/* Mis cursos: page geometry only; reusable components live in components.css. */
+.course-home { padding: 0; }
+.course-home__content {
+  padding: var(--spacing-8) var(--component-overview-gutter) var(--spacing-10);
+}
+.course-home__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+.course-home__title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-5);
+  font-size: var(--typography-size-overview-heading);
+  line-height: var(--typography-line-height-heading);
+}
+.course-home__title > i { font-size: var(--component-overview-heading-icon); }
+.course-home__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--spacing-8);
+}
+.course-home__courses { min-width: 0; }
+@media (min-width: 1024px) and (max-width: 1450px) {
+  .course-home__content { padding-inline: var(--spacing-10); }
+}
+@media (max-width: 1023px) {
+  .course-home__content { padding-inline: var(--spacing-6); }
+  .course-home__columns { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 767px) {
+  .course-home__content {
+    padding: var(--spacing-6) max(var(--component-overview-mobile-gutter), env(safe-area-inset-right, 0px)) calc(var(--spacing-6) + var(--safe-area-bottom)) max(var(--component-overview-mobile-gutter), env(safe-area-inset-left, 0px));
+  }
+  .course-home__toolbar { gap: var(--spacing-3); margin-bottom: var(--spacing-5); }
+  .course-home__title { gap: var(--spacing-3); font-size: var(--typography-size-site); }
+}
