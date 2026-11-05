@@ -1,8 +1,10 @@
-# Preparación de GitHub Pages
+# Publicación autorizada en GitHub Pages
 
-El frontend compila como sitio estático en `dist/client`. La configuración Vite utiliza base relativa y los recursos dinámicos pasan por el mismo resolvedor de URL. Esto permite servir desde raíz o desde `/unah-campus-virtual-prototype/`; la navegación usa hash y no requiere reescrituras del servidor.
+Joel autorizó expresamente publicar el prototipo el4de noviembre de2026, con acceso público sin autenticación. Se utiliza únicamente el repositorio existente unah-campus-virtual-prototype. Se conserva la preferencia de repositorio privado si Pages lo permite; está autorizado cambiarlo a público si el plan lo exige.
 
-## Validación local
+## Build y rutas
+
+El frontend estático se compila en dist/client. Vite utiliza una base relativa y el mismo resolvedor para recursos dinámicos; el sitio se sirve en `/unah-campus-virtual-prototype/` y navega por hash. El ZIP y su checksum se sirven bajo downloads, en la misma base.
 
 ```sh
 npm ci
@@ -10,14 +12,18 @@ npm run build:pages
 npm run preview:pages
 ```
 
-La vista previa local se sirve en `http://127.0.0.1:4174/unah-campus-virtual-prototype/#/cursos`. Se comprueban CSS, fuentes, imágenes, video, subtítulos, navegación y ZIP desde esa subruta. Las pruebas de build verifican que los recursos no escapen a la raíz del dominio.
+La vista previa local permite comprobar esa subruta antes de publicar. Las pruebas de build revisan HTML/CSS, imágenes, fuentes, video, subtítulos y ZIP; el catálogo comparte componentes y rutas aisladas por asignatura.
 
-## Estado de publicación
+## Workflows
 
-Pages permanece desactivado. El único workflow activo es `validate.yml`, con permisos de lectura y comprobaciones de build; no contiene despliegue ni permisos de Pages.
+validate.yml comprueba el proyecto con permisos de lectura. pages.yml publica mediante ejecución manual: instala dependencias bloqueadas, ejecuta build:pages, carga dist/client y despliega a Pages con los permisos mínimos del job de publicación.
 
-`github-pages.yml.example`, en este mismo directorio, es una plantilla inactiva. No está en la carpeta de workflows y no puede ejecutarse como publicación. Después de autorización expresa, el responsable podrá revisar el plan/visibilidad del repositorio, habilitar Pages y trasladar la plantilla. No realizar esos pasos durante la preparación.
+La publicación no modifica el diseño, los tokens, la lógica académica ni Moodle. La revisión documental r2 del ZIP conserva su manifiesto y SHA-256. Las verificaciones de privacidad abarcan los archivos y el historial; los avisos de recursos se conservan en NOTICE y en los archivos de licencia.
 
-GitHub Pages para repositorios privados depende del plan de la cuenta. No se presume disponibilidad ni se cambia la visibilidad del repositorio para activarlo. [Documentación oficial de disponibilidad](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+## Destino público
 
-La preparación sigue la configuración de [rutas base de Vite](https://vite.dev/guide/build.html#public-base-path) y los [workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). La variante relativa se prueba de forma explícita en la subruta real del repositorio.
+https://menciajoel.github.io/unah-campus-virtual-prototype/
+
+Después de cada publicación autorizada se debe verificar el acceso sin cookies/autorización, los recorridos académicos, el menú móvil, los recursos y el ZIP descargado contra su checksum.
+
+Referencias de configuración: [rutas base de Vite](https://vite.dev/guide/build.html#public-base-path) y [workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).

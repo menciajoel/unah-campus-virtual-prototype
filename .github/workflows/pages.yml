@@ -1,4 +1,3 @@
-# Inactive example. Copy to .github/workflows only after explicit publication approval.
 name: Publish authorized prototype to GitHub Pages
 on:
   workflow_dispatch:

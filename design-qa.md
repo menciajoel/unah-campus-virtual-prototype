@@ -20,7 +20,7 @@ La modificación visual autorizada es la utilidad inferior de descarga. Se conse
 
 ## Funcionalidad y accesibilidad
 
-Un único componente persiste en Inicio, Mis cursos y tres asignaturas. Enlace nativo download, teclado, foco y estados definidos. No abre páginas ni solicita datos. Se oculta con modales y conserva el scroll. Descarga real en Safari/Chrome, ZIP actualizado y hashes comprobados. Build local de Pages navega tres cursos y reproduce el mismo video bajo la subruta; no hay despliegue.
+Un único componente persiste en Inicio, Mis cursos y tres asignaturas. Enlace nativo download, teclado, foco y estados definidos. No abre páginas ni solicita datos. Se oculta con modales y conserva el scroll. Descarga real en Safari/Chrome, ZIP actualizado y hashes comprobados. Build local de Pages navega tres cursos y reproduce el mismo video bajo la subruta; las verificaciones previas a la publicación no requieren modificar el diseño.
 
 Los tokens y CSS del ZIP r2 coinciden byte a byte con los de la revisión previa al addendum. Los cambios posteriores de código son exclusivamente de rutas de recursos, autorizados por Joel. Las pruebas de caracterización de Administración y catálogo pasaron.
 

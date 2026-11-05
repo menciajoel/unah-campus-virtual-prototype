@@ -2,6 +2,10 @@
 
 Prototipo responsive de presentación institucional, con tres asignaturas navegables y contenido exclusivamente demostrativo. Incluye Design System vigente, documentación consolidada y descarga directa del handoff. No implementa Moodle, autenticación, entregas reales ni calificaciones.
 
+## Sitio público
+
+Destino de publicación: https://menciajoel.github.io/unah-campus-virtual-prototype/ . La publicación fue autorizada el4de noviembre de2026; el sitio está destinado a acceso público, sin cuenta de GitHub.
+
 ## Diseño y documentación
 
 El contrato vigente está en `references/02-DESIGN-SYSTEM/` y las especificaciones en `references/03-ESPECIFICACIONES/`. Se conserva un solo Design System. Los tokens JSON generan `src/css/tokens.css`; no editar ese archivo manualmente.
@@ -64,7 +68,7 @@ Portada de Administración: recurso de demostración editado a partir de la refe
 
 ## Alcance de esta entrega
 
-Repositorio independiente y privado: unah-campus-virtual-prototype. GitHub Pages está preparado y permanece sin activar. Publicar requiere autorización expresa. No se modifican otros repositorios ni proyectos.
+Repositorio independiente: unah-campus-virtual-prototype. La publicación pública de GitHub Pages fue autorizada expresamente por Joel; únicamente se utiliza este repositorio. No se modifican otros repositorios ni proyectos.
 
 
 ## ZIP de diseño y repositorio funcional
@@ -73,13 +77,13 @@ El [ZIP descargable](public/downloads/UNAH-Campus-Virtual-Design-Handoff.zip) co
 
 El manifiesto y el README del paquete se verifican contra los archivos realmente incluidos. La guía documental de Moodle no implementa ni modifica Moodle.
 
-## GitHub Pages, sin publicación
+## GitHub Pages
 
 ```sh
 npm run build:pages
 npm run preview:pages
 ```
 
-La salida es `dist/client`; la vista previa prueba `/unah-campus-virtual-prototype/`. El workflow activo solo valida. La plantilla de publicación está fuera de workflows y no se ejecuta. Consultar [preparación de Pages](docs/github-pages.md). Activar o publicar requiere autorización expresa.
+La salida es `dist/client`; la vista previa prueba `/unah-campus-virtual-prototype/`. El workflow validate.yml comprueba el proyecto. El workflow pages.yml publica mediante ejecución manual después de la autorización recibida. Consultar [GitHub Pages](docs/github-pages.md). Las licencias y procedencia se describen en [NOTICE.md](NOTICE.md).
 
 Los borradores, capturas internas, archivos temporales y el starter opcional de hosting quedan fuera del repositorio. Las referencias actuales del handoff y los archivos necesarios para reconstruirlo sí se versionan.

@@ -1,5 +1,7 @@
 # Entrega de Design Handoff y preparación de GitHub
 
+Este informe registra la fase de preparación. Posteriormente Joel autorizó la publicación pública; el estado de Pages y el workflow vigente se describe en docs/github-pages.md.
+
 Fecha: 2026-11-04. Revisión documental:2026-11-04-r2. Design System visual1.4.
 
 ## Paquete vigente
