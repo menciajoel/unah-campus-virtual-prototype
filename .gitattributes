@@ -8,3 +8,6 @@
 *.woff binary
 *.woff2 binary
 *.ttf binary
+
+# Preserve the bytes of the authorized educational packages.
+/pages-v04/** -text

@@ -27,3 +27,9 @@ https://menciajoel.github.io/unah-campus-virtual-prototype/
 Después de cada publicación autorizada se debe verificar el acceso sin cookies/autorización, los recorridos académicos, el menú móvil, los recursos y el ZIP descargado contra su checksum.
 
 Referencias de configuración: [rutas base de Vite](https://vite.dev/guide/build.html#public-base-path) y [workflows de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+## Versión pública vigente
+
+El workflow conserva la compilación histórica y superpone el contenido estático de `pages-v04/` a `dist/client/` antes de subir el artefacto. La raíz pública abre la v04 de Introducción a la Estadística en la misma URL. Los archivos distribuidos de la versión histórica permanecen en el repositorio.
+
+El paquete v04 incluye los cuatro visores de la Unidad 3, Tema 2 y sus dependencias de distribución verificadas en Drive y los tres recursos gráficos requeridos por la presentación, más el banner y las lecturas PDF. El despliegue usa una insignia de usuario de demostración y un PPTX de apoyo cuya copia pública omite dos campos personales de propiedades de autoría. El contenido de las diapositivas y los HTML preparados por la UNAH conservan sus bytes.
